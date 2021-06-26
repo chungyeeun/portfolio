@@ -1,5 +1,5 @@
 nav {
-    position: fixed;
+    
     top: 0;
     /* width: 100% */
     left: 0;
@@ -27,11 +27,15 @@ body {}
     margin-right: 50px;
     margin-left: 0px;
     margin-top: 20px;
+    transition: transform 1s;
+}
+
+.nav ul li:hover {
+    transform: translateY(-5px);
 }
 
 li {
     list-style: none;
-    margin-top: 30px;
 }
 
 a {
@@ -40,7 +44,7 @@ a {
 }
 
 .main {
-    margin-top: 100px;
+    margin-top: 30px;
     display: block;
 }
 
@@ -54,15 +58,16 @@ a {
 
 .profile {
     display: flex;
+    align-items: center;
 }
 
 .profile-image {
     width: 200px;
-    height: 100%;
+    height: auto;
 }
 
 .profile-desc p {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 20px;
 }
 
@@ -71,10 +76,12 @@ a {
     height: 80%;
     max-width: 300px;
     margin-top:100px;
+    object-fit: cover;
+
 }
 
 .introduce-desc p {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .introduce {
@@ -91,4 +98,38 @@ a {
     margin: 0 auto;
     display: block;
     margin-top: 100px;
+}
+
+.projects  {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.projects ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(214, 213, 213);
+}
+
+.projects ul li {
+    margin-top:80px;
+    transition: transform 1s;
+}
+
+.projects ul li:hover {
+    transform: translateY(-5px);
+}
+
+.contact ul {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact ul li {
+    margin: 10px;
+}
+.contact {
+    margin-top: 200px;
 }
